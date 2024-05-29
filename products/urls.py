@@ -17,8 +17,8 @@ urlpatterns = [
     path('categories/<int:pk>/delete/', DeleteCategoryAPIView.as_view(), name='category-delete'),
     # path('categories/<int:pk>/', RetrieveUpdateDestroyCategoryAPIView.as_view(), name='category-detail'),
     # path('goods/<int:pk>/', RetrieveUpdateDestroyGoodsAPIView.as_view(), name='goods-detail'),
-    path('goods/', ListCreateProductAPIView.as_view(), name='goods-list-create'),
-    path('goods/<int:pk>/', RetrieveProductAPIView.as_view(), name='goods-retrieve'),
-    path('goods/<int:pk>/update/', UpdateProductAPIView.as_view(), name='goods-update'),
-    path('goods/<int:pk>/delete/', DeleteProductAPIView.as_view(), name='goods-delete'),
+    path('product/', ListCreateProductAPIView.as_view(), name='product-list-create'),
+    path('product/<int:pk>/', RetrieveProductAPIView.as_view(), name='product-retrieve'),
+    path('product/<int:pk>/update/', UpdateProductAPIView.as_view(), name='product-update'),
+    path('product/<int:pk>/delete/', DeleteProductAPIView.as_view(), name='product-delete'),
 ]
